@@ -1,8 +1,12 @@
+import time
+
 from common import make_hash_function
 
 
 def find_cycle(k: int, iv: str):
     print(f"Find cycle for k={k} with iv={iv}")
+
+    start_time = time.time()
 
     hash_function = make_hash_function(k)
 
@@ -35,3 +39,4 @@ def find_cycle(k: int, iv: str):
         cycle_length += 1
 
     print(f"Initial Value: {t.hex()}, and the cycle length: {cycle_length}")
+    print(f"Total seconds: {time.time() - start_time}")
