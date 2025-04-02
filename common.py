@@ -26,6 +26,16 @@ def load_checkpoint(filename) -> Tuple[bytes, bytes, int]:
         return pickle.load(f)
 
 
+def save_starting_point(filename, starting_point: bytes):
+    with open(filename, "wb") as f:
+        pickle.dump((starting_point), f)
+
+
+def load_starting_point(filename) -> Tuple[bytes]:
+    with open(filename, "rb") as f:
+        return pickle.load(f)
+
+
 def delete_checkpoint(filename: str):
     if os.path.exists(filename):
         os.remove(filename)
