@@ -2,6 +2,7 @@ import argparse
 
 from analyze import run_analysis
 from cycle import find_cycle
+from check import check_result
 from collision import find_collision
 
 MY_STUDENT_ID = "20180334"
@@ -18,6 +19,11 @@ def main():
     cycle.add_argument("--k", type=int, required=True, help="Number of bits in hash value")
     cycle.add_argument("--iv", type=str, default=MY_STUDENT_ID, help="Initial value")
 
+    check = subparsers.add_parser("check", help="Check if cycle prints valid output")
+    check.add_argument("--k", type=int, required=True, help="Number of bits in hash value")
+    check.add_argument("--iv", type=str, required=True, help="Initial value")
+    check.add_argument("--cycle", type=int, required=True, help="Total repeats")
+
     collision = subparsers.add_parser("collision", help="Find hash collision (4-e)")
     collision.add_argument("--k", type=int, required=True, help="Number of bits in hash value")
     collision.add_argument("--iv", type=str, default=MY_STUDENT_ID, help="Initial value")
@@ -28,6 +34,8 @@ def main():
         run_analysis(args.k)
     elif args.command == "cycle":
         find_cycle(args.k, args.iv)
+    elif args.command == "check":
+        check_result(args.k, args.iv, args.cycle)
     elif args.command == "collision":
         find_collision(args.k, args.iv)
 
