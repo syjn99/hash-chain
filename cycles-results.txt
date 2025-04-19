@@ -1,0 +1,8 @@
+k=16, iv=20180334, start=b458, cycle_length=242, time=0.00s
+k=24, iv=20180334, start=31f798, cycle_length=1654, time=0.00s
+k=32, iv=20180334, start=c0e8fe65, cycle_length=28602, time=0.06s
+k=40, iv=20180334, start=2aacb13985, cycle_length=61796, time=0.33s
+k=48, iv=20180334, start=32da7c5a0436, cycle_length=35053031, time=55.48s
+k=56, iv=20180334, start=a277cce631fd83, cycle_length=209303258, time=1254.92s
+k=64, iv=20180334, start=ea40f48c1ace9de1, cycle_length=395994193, time=13219.02s
+k=72, iv=20180334, start=09cb94259db0ab5e81, cycle_length=120186138327, time=165326.13s

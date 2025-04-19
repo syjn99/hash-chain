@@ -1,0 +1,8 @@
+k=16, Collided hash=b458, Preimage(tail)=fa29, Preimage(cycle)=1a7a, time=0.00s
+k=24, Collided hash=31f798, Preimage(tail)=160f3a, Preimage(cycle)=fa01f7, time=0.00s
+k=32, Collided hash=c0e8fe65, Preimage(tail)=3edd9afc, Preimage(cycle)=13719824, time=0.05s
+k=40, Collided hash=2aacb13985, Preimage(tail)=2b98882300, Preimage(cycle)=84c38b68d2, time=0.31s
+k=48, Collided hash=32da7c5a0436, Preimage(tail)=6587840fb3ea, Preimage(cycle)=873dcd323a92, time=41.41s
+k=56, Collided hash=a277cce631fd83, Preimage(tail)=328d00f8af732c, Preimage(cycle)=a0cac1da0157dd, time=127.10s
+k=64, Collided hash=ea40f48c1ace9de1, Preimage(tail)=09a7cb1805d79881, Preimage(cycle)=22de3c9bd2e05fd8, time=12978.22s
+k=72, Collided hash=09cb94259db0ab5e81, Preimage(tail)=118533ca938983a9b2, Preimage(cycle)=176407233fd8a3bdd1, time=111578.40s
